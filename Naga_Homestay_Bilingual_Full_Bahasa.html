@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Naga Homestay</title>
+<style>body{font-family:Arial,sans-serif;margin:0;padding:0}section{padding:20px}.button{background:#28a745;color:white;padding:10px 15px;text-decoration:none;border-radius:5px}</style>
+</head>
+<body>
+
+<style>
+.lang-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 14px;
+}
+</style>
+<div class="lang-toggle" onclick="toggleLang()">Switch to English</div>
+<script>
+let currentLang = 'id';
+function toggleLang() {
+    if (currentLang === 'id') {
+        document.querySelector('[data-lang="id"]').style.display = 'none';
+        document.querySelector('[data-lang="en"]').style.display = 'block';
+        document.querySelector('.lang-toggle').innerText = 'Ganti ke Bahasa';
+        currentLang = 'en';
+    } else {
+        document.querySelector('[data-lang="id"]').style.display = 'block';
+        document.querySelector('[data-lang="en"]').style.display = 'none';
+        document.querySelector('.lang-toggle').innerText = 'Switch to English';
+        currentLang = 'id';
+    }
+    window.scrollTo(0,0);
+}
+</script>
+
+<div class='lang' data-lang='id' style='display:block;'>
+<section id="home">
+    <h1>Naga Homestay</h1>
+    <p>Tempat nyaman Anda di Kudus, Jawa Tengah</p>
+    <a href="https://wa.me/6285729971379" class="button">Pesan Sekarang</a>
+</section>
+
+<section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Selamat datang di Naga Homestay, rumah kedua Anda di Kudus.
+    Kami adalah penginapan keluarga yang menawarkan suasana hangat, ramah, kamar bersih, dan lingkungan tenang.
+    Berlokasi dekat pusat kota Kudus, homestay kami memudahkan akses ke tempat wisata, pasar tradisional, dan kuliner khas Jawa Tengah.
+    Hanya 4 menit berkendara ke Alun-Alun dan 3 menit ke Menara Kudus.</p>
+    <p><strong>Lokasi:</strong> Plosokrajan Jl. Pondok, Plosokrajan, Ploso, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59348</p>
+</section>
+
+<section id="rooms">
+    <h2>Kamar & Harga</h2>
+    <table>
+        <tr>
+            <th>Tipe Kamar</th>
+            <th>Fasilitas</th>
+            <th>Harga/Bulan</th>
+            <th>Harga/Malam</th>
+        </tr>
+        <tr>
+            <td>Kamar Standar</td>
+            <td>• Tempat tidur double<br>• AC<br>• TV<br>• Kamar mandi pribadi<br>• Air panas<br>• Pemandangan taman<br>• 12 m²</td>
+            <td>Rp 1.600.000<br>[Listrik termasuk]</td>
+            <td>Rp 200.000</td>
+        </tr>
+        <tr>
+            <td>Kamar Standar Plus</td>
+            <td>• Tempat tidur double<br>• AC<br>• TV<br>• Kamar mandi pribadi<br>• Air panas<br>• Balkon<br>• 16 m²</td>
+            <td>Rp 1.500.000<br>[Listrik tidak termasuk]</td>
+            <td>Rp 250.000</td>
+        </tr>
+        <tr>
+            <td>Dorm</td>
+            <td>4 tempat tidur, kamar mandi bersama</td>
+            <td>-</td>
+            <td>Rp 100.000</td>
+        </tr>
+    </table>
+</section>
+
+<section id="facilities">
+    <h2>Fasilitas</h2>
+    <ul>
+        <li>Wi-Fi gratis</li>
+        <li>Air minum gratis</li>
+        <li>AC</li>
+        <li>Air panas</li>
+        <li>Dapur umum</li>
+        <li>Parkir</li>
+        <li>Area taman</li>
+    </ul>
+</section>
+
+<section id="why">
+    <h2>Mengapa Menginap di Sini</h2>
+    <ul>
+        <li>Dekat dengan Menara Kudus</li>
+        <li>Pelayanan hangat oleh keluarga</li>
+        <li>Kamar bersih dan luas</li>
+        <li>Harga terjangkau</li>
+        <li>Lingkungan tenang</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Galeri</h2>
+    <p>Foto eksterior, kamar, area makan, dan pemandangan sekitar.</p>
+</section>
+
+<section id="contact">
+    <h2>Kontak & Pemesanan</h2>
+    <p><strong>WhatsApp:</strong> +62 857 2997 1379</p>
+    <p><strong>Telepon:</strong> +62 857 2997 1379</p>
+    <a href="https://wa.me/6285729971379" class="button">Pesan Sekarang</a>
+</section>
+
+<section id="map">
+    <h2>Peta Lokasi</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.203175861707!2d110.8284226!3d-6.8166468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c49536091061%3A0x824111f5a26fe194!2sNaga%20Homestay%202!5e0!3m2!1sid!2sid!4v1691680000000!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+</div>
+<div class='lang' data-lang='en' style='display:none;'>
+<section id="home">
+    <h1>Naga Homestay</h1>
+    <p>Your cozy escape in Kudus, Central Java</p>
+    <a href="https://wa.me/6285729971379" class="button">Book Now</a>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Naga Homestay, your home away from home in Kudus.
+    We are a family-run accommodation offering a warm, friendly atmosphere, clean rooms, and peaceful surroundings.
+    Located close to the heart of Kudus, our homestay provides easy access to local attractions, traditional markets, and the culinary delights of Central Java.
+    Just 4 minutes’ drive to Alun-Alun and 3 minutes to Menara Kudus.</p>
+    <p><strong>Location:</strong> Plosokrajan Jl. Pondok, Plosokrajan, Ploso, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59348</p>
+</section>
+
+<section id="rooms">
+    <h2>Rooms & Rates</h2>
+    <table>
+        <tr>
+            <th>Room Type</th>
+            <th>Facilities</th>
+            <th>Price/Month</th>
+            <th>Price/Night</th>
+        </tr>
+        <tr>
+            <td>Standard Room</td>
+            <td>• Double bed<br>• AC<br>• TV<br>• Private bathroom<br>• Hot shower<br>• Garden view<br>• 12 m²</td>
+            <td>IDR 1,600,000<br>[Electricity included]</td>
+            <td>IDR 200,000</td>
+        </tr>
+        <tr>
+            <td>Standard Room Plus</td>
+            <td>• Double bed<br>• AC<br>• TV<br>• Private bathroom<br>• Hot shower<br>• Balcony<br>• 16 m²</td>
+            <td>IDR 1,500,000<br>[Electricity not included]</td>
+            <td>IDR 250,000</td>
+        </tr>
+        <tr>
+            <td>Dorm</td>
+            <td>4 beds, shared bathroom</td>
+            <td>-</td>
+            <td>IDR 100,000</td>
+        </tr>
+    </table>
+</section>
+
+<section id="facilities">
+    <h2>Facilities</h2>
+    <ul>
+        <li>Free Wi-Fi</li>
+        <li>Free drinking water</li>
+        <li>Air conditioning</li>
+        <li>Hot shower</li>
+        <li>Public kitchen</li>
+        <li>Parking</li>
+        <li>Garden area</li>
+    </ul>
+</section>
+
+<section id="why">
+    <h2>Why Stay With Us</h2>
+    <ul>
+        <li>Close to Menara Kudus</li>
+        <li>Warm, family-run service</li>
+        <li>Clean and spacious rooms</li>
+        <li>Affordable prices</li>
+        <li>Peaceful surroundings</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Exterior shots, rooms, dining area, and nearby attractions.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact & Booking</h2>
+    <p><strong>WhatsApp:</strong> +62 857 2997 1379</p>
+    <p><strong>Phone:</strong> +62 857 2997 1379</p>
+    <a href="https://wa.me/6285729971379" class="button">Book Now</a>
+</section>
+
+<section id="map">
+    <h2>Location Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.203175861707!2d110.8284226!3d-6.8166468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c49536091061%3A0x824111f5a26fe194!2sNaga%20Homestay%202!5e0!3m2!1sen!2sid!4v1691680000000!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+</div>
+</body>
+</html>
